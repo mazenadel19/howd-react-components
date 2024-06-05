@@ -118,10 +118,7 @@ mkDirPromise(componentDir)
     // Replace our placeholders with real data (so far, just the component name)
     cssTemplate.replace(/COMPONENT_NAME/g, componentName)
   )
-  .then((cssTemplate) =>
-    // Format it using prettier, to ensure style consistency, and write to file.
-    writeFilePromise(cssFilePath, prettify(cssTemplate))
-  )
+  .then((cssTemplate) => writeFilePromise(cssFilePath, cssTemplate))
   .then((cssTemplate) => {
     logItemCompletion("CSS built and saved to disk.");
     return cssTemplate;
