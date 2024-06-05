@@ -2,10 +2,13 @@ import React from "react";
 
 import styles from "./Card.module.css";
 
-export interface CardProps {}
+export interface CardProps extends React.ComponentProps<"article"> {
+  textColor: string;
+  backgroundColor: string;
+}
 
-function Card({}: CardProps) {
-  return <div className={styles.wrapper}></div>;
+function Card({ textColor, backgroundColor, children }: CardProps) {
+  return <article className={styles.wrapper}>{children}</article>;
 }
 
 export default Card;
