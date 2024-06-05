@@ -40,7 +40,7 @@ where `<component-name>` is the name of the new component. For example:
 
     import styles from './Button.module.css';
 
-    export type ButtonProps = {};
+    export interface ButtonProps = {};
 
     function Button({}: ButtonProps) {
       return <div className={styles.wrapper}></div>;
