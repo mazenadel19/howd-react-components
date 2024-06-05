@@ -43,7 +43,7 @@ where `<component-name>` is the name of the new component. For example:
     export type ButtonProps = {};
 
     function Button({}: ButtonProps) {
-    return <div className={styles.wrapper}></div>;
+      return <div className={styles.wrapper}></div>;
     }
 
     export default Button;
