@@ -1,0 +1,30 @@
+:root {
+  /* colors from Radix UI colors: https://www.radix-ui.com/colors */
+  --color-olive-1: #fcfdfc;
+  --color-olive-2: #f8faf8;
+  --color-olive-3: #eff1ef;
+  --color-olive-9: #898e87;
+  --color-olive-10: #7f847d;
+  --color-olive-11: #60655f;
+  --color-olive-12: #1d211c;
+
+  --separator-border: 2px dotted var(--color-olive-11);
+  --section-gap: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--color-olive-12);
+  background-color: var(--color-olive-3);
+}
