@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import styles from './Spinner.module.css';
+import styles from "./Spinner.module.css";
 
-export type SpinnerProps = {};
+export interface SpinnerProps {}
 
 function Spinner({}: SpinnerProps) {
   return <div className={styles.wrapper}></div>;

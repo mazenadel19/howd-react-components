@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import styles from './Button.module.css';
+import styles from "./Button.module.css";
 
-export type ButtonProps = {};
+export interface ButtonProps {}
 
 function Button({}: ButtonProps) {
   return <div className={styles.wrapper}></div>;

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import styles from './Card.module.css';
+import styles from "./Card.module.css";
 
-export type CardProps = {};
+export interface CardProps {}
 
 function Card({}: CardProps) {
   return <div className={styles.wrapper}></div>;
