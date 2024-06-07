@@ -14,7 +14,10 @@ function Button({
   ...delegated
 }: ButtonProps) {
   return (
-    <button className={clsx(styles.wrapper, className)} {...delegated}>
+    <button
+      className={clsx(styles.wrapper, styles[variant], className)}
+      {...delegated}
+    >
       {children}
     </button>
   );
