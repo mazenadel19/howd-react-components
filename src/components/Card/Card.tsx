@@ -11,12 +11,22 @@ export interface CardProps extends React.ComponentProps<"article"> {
 function Card({
   textColor,
   backgroundColor,
+  style,
   className,
   children,
   ...delegated
 }: CardProps) {
+  const colorStyles = {
+    color: textColor,
+    backgroundColor,
+  };
+
   return (
-    <article className={clsx(styles.wrapper, className)} {...delegated}>
+    <article
+      className={clsx(styles.wrapper, className)}
+      style={{ ...style, ...colorStyles }}
+      {...delegated}
+    >
       {children}
     </article>
   );
