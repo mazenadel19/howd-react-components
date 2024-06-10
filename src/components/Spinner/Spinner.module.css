@@ -1,2 +1,27 @@
 .wrapper {
 }
+
+.loader {
+  animation: pulse 2000ms infinite ease-in-out;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .loader {
+    animation: spin 5000ms infinite linear;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
