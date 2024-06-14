@@ -1,13 +1,6 @@
-import Footer from "@/components/Footer";
-import StyleGenerator from "@/components/StyleGenerator";
-
-import styles from "./page.module.css";
+"use client";
+import React from "react";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <StyleGenerator />
-      <Footer />
-    </main>
-  );
+  return <main>{/* where the magic happens */}</main>;
 }
