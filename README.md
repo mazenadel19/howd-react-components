@@ -1,8 +1,8 @@
 # Hands-on Web Dev React Components
 
-This code supports the "React Components" challenge series from the [Hands-on Web Dev newsletter](https://newsletter.howd.dev).
+This code supports the "React Components" series from the [Hands-on Web Dev newsletter](https://newsletter.howd.dev).
 
-To try the workshop, [start here](https://newsletter.howd.dev/challenges/017/)!
+To try the series, [start here](https://newsletter.howd.dev/challenges/017/)!
 
 ## Getting started
 
