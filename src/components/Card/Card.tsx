@@ -8,9 +8,14 @@ export interface CardProps extends React.ComponentProps<"article"> {
   backgroundColor: string;
 }
 
-function Card({ textColor, backgroundColor, className, children, ...props }: Readonly<CardProps>) {
+function Card({ textColor, backgroundColor, style, className, children, ...props }: Readonly<CardProps>) {
+  const colorStyles = {
+    color: textColor,
+    backgroundColor,
+  };
+
   return (
-    <article className={clsx(styles.wrapper, className)} {...props}>
+    <article className={clsx(styles.wrapper, className)} style={{ ...style, ...colorStyles }} {...props}>
       {children}
     </article>
   );

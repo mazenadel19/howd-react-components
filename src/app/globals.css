@@ -41,6 +41,7 @@ body {
   color: var(--color-olive-12);
   background-color: var(--color-olive-3);
 
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
