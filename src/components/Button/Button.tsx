@@ -9,7 +9,7 @@ export interface ButtonProps extends React.ComponentProps<"button"> {
 
 function Button({ variant = "filled", className, children, ...props }: Readonly<ButtonProps>) {
   return (
-    <button className={clsx(styles.wrapper, className)} {...props}>
+    <button data-variant={variant} className={clsx(styles.wrapper, className)} {...props}>
       {children}
     </button>
   );
